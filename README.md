@@ -25,11 +25,17 @@ Deployed on **Google Cloud Run** with Docker for scalable, cloud-based AI conten
 
 ## 📂 Project Structure
 ├── app.py # Main Flask application
+
 ├── requirements.txt # Python dependencies
+
 ├── templates/ # HTML templates (index page)
+
 ├── static/ # CSS, images, and static files
+
 ├── Dockerfile # Container build configuration
+
 ├── Procfile # Deployment config
+
 └── README.md # Project documentation
 
 ---
@@ -45,16 +51,22 @@ cd youtube-video-summarizer
 
 ### 2️⃣ Install dependencies
 
+```bash
 python -m pip install -r requirements.txt
+```
 
 ### 3️⃣ Authenticate with Google Cloud
 
+```bash
 gcloud auth application-default login
 gcloud config set project lucid-sweep-468105-b4
+```
 
 ### 4️⃣ Run the application locally
 
+```bash
 python app.py
+```
 
 Access it at http://127.0.0.1:8080
 
